@@ -1,0 +1,16 @@
+{
+  "name": "fresh-start",
+  "version": "0.0.1",
+  "description": "OpenUI5 Starting Template",
+  "scripts": {
+    "start": "ui5 serve",
+    "proxy": "node proxy.js"
+  },
+  "keywords": [],
+  "author": "Konstantin Gogov",
+  "license": "ISC",
+  "devDependencies": {
+    "@ui5/cli": "^2.14.2",
+    "cors-anywhere": "^0.4.4"
+  }
+}
