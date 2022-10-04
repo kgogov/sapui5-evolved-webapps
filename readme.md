@@ -88,3 +88,22 @@ webapp
 
 Asynchronous loading of dependencies can be seen in the `App.controller.js` file included in the template. \
 In the controller file, `sap.ui.define` is used for asynchronous loading of the controller base class before extending it.
+
+### Week 2 Unit 2
+
+When declaring events in the XML, you can also specify a list of parameters that are passed to the handler. \
+The passed value can then be used directly in the controller method. \
+You can specify JavaScript literals like strings, numbers, arrays, and objects. \
+We can also use expression binding syntax and translated text from the i18n model, which will be explained in the next unit.
+
+For very simple event handlers, you can directly define the event logic in the view. \
+For demo purposes, show a simple message to the user, when they click on the image.
+
+Related material
+* [Blog: Event Parameter Syntax in XML views](https://blogs.sap.com/2018/08/09/ui5ers-buzz-34-new-event-parameter-syntax-in-xmlviews/)
+
+**Controller Lifecycle Hooks**
+* `onInit`
+* `onExit`
+* `onBeforeRendering`
+* `onAfterRendering`
