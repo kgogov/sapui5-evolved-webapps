@@ -107,3 +107,19 @@ Related material
 * `onExit`
 * `onBeforeRendering`
 * `onAfterRendering`
+
+### Week 2 Unit 3
+
+The data binding syntax allows you to make the following assignments:
+* The curly brackets indicate the beginning and end of binding info to the browser
+* `movies` is the data model name we set in your `manifest.json` file
+* The close-angular-bracket character `">"` separates the model name from the binding path to a particular entry
+* The `path` property of the data binding info is necessary when two properties are listed inside the data binding info. \
+  This is called "complex binding syntax". \
+  You apply the `formatter` and set the `templateSharable` property
+* The `formatter` syntax points to your `formatDate` formatter method in your model folder
+
+Related material
+* [Data Binding](https://openui5nightly.hana.ondemand.com/#/topic/e5310932a71f42daa41f3a6143efca9c)
+* [Expression Binding](https://openui5nightly.hana.ondemand.com/#/topic/daf6852a04b44d118963968a1239d2c0)
+* [Planning Calendar](https://openui5nightly.hana.ondemand.com/#/entity/sap.m.PlanningCalendar)
