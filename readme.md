@@ -119,6 +119,14 @@ The data binding syntax allows you to make the following assignments:
   You apply the `formatter` and set the `templateSharable` property
 * The `formatter` syntax points to your `formatDate` formatter method in your model folder
 
+Data Binding Types
+
+![Data Binding Types](./others/images/w2u3-Data_Binding_Types.png)
+
+Diiferent ways of binding
+
+![Diiferent ways of binding](others/images/w2u3-Data-Bindings&Using-Models.png)
+
 Related material
 * [Data Binding](https://openui5nightly.hana.ondemand.com/#/topic/e5310932a71f42daa41f3a6143efca9c)
 * [Expression Binding](https://openui5nightly.hana.ondemand.com/#/topic/daf6852a04b44d118963968a1239d2c0)
