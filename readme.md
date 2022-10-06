@@ -86,6 +86,9 @@ webapp
     └── App.view.xml
 ```
 
+![MVC pattern](others/images/w2u1-MVC_Pattern.png);
+
+
 Asynchronous loading of dependencies can be seen in the `App.controller.js` file included in the template. \
 In the controller file, `sap.ui.define` is used for asynchronous loading of the controller base class before extending it.
 
