@@ -19,7 +19,15 @@
       showNavButton="true"
       class="sapUiResponsiveContentPadding"
       navButtonPress=".onNavBack">
-
+    <landmarkInfo>
+      <PageAccessibleLandmarkInfo
+          rootRole="Main"
+          rootLabel="{i18n>landmarkDetailPage}"
+          contentRole="Region"
+          contentLabel="{i18n>landmarkDetailPage}"
+          headerRole="Region"
+          headerLabel="{movies>cinemaName}" />
+    </landmarkInfo>
     <content>
       <FlexBox wrap="Wrap">
         <l:VerticalLayout

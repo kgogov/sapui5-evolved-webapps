@@ -4,13 +4,24 @@
   "description": "OpenUI5 Starting Template",
   "scripts": {
     "start": "ui5 serve",
-    "proxy": "node proxy.js"
+    "karma": "karma start",
+    "karma-ci": "karma start karma-ci.conf.js",
+    "watch": "npm run karma",
+    "test": "npm run karma-ci && rimraf coverage",
+    "build": "rimraf dist && ui5 build --clean-dest --all",
+    "proxy": "node proxy.js",
+    "localproxy": "lcp --proxyUrl https://USERNAME:PASSWORT@sapes5.sapdevcenter.com/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/"
   },
   "keywords": [],
   "author": "Konstantin Gogov",
   "license": "ISC",
   "devDependencies": {
     "@ui5/cli": "^2.14.2",
-    "cors-anywhere": "^0.4.4"
+    "cors-anywhere": "^0.4.4",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.3",
+    "karma-ui5": "^2.4.0",
+    "rimraf": "^3.0.2"
   }
 }

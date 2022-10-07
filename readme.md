@@ -147,6 +147,39 @@ The routing configuration is responsible for loading and displaying the XML view
 You simply connect the views by triggering navigation events and let the route do the work.
 
 It is good practice to create an empty app view and let the routing load and place all views inside the app. \
-This way, the views are only loaded when the corresponding route has been hit. \
+This way, the views are only loaded when the corresponding route has been hit.
 
 ![Router](others/images/w2u4-Router.png)
+
+### Week 2 Unit 5
+
+The font name '72' stands for the year 1972 when SAP was founded. \
+The font is available in the SAP Fiori Fundamentals package.
+
+**Accessibility** is a key feature of SAP Fiori. \
+The SAP Fiori Design Guidelines provide a set of accessibility guidelines for developers. \
+The guidelines are based on the Web Content Accessibility Guidelines (WCAG) 2.0.
+* High contrast themes
+* Keyboard navigation
+* Screen reader support
+
+**Globalization** and localization are important aspects of SAP Fiori. \
+* Translation - over 40 available languages
+* Internationalization - date, time, number, currency, and measurement formats
+
+**Security**
+* HTML code is provided by the framework
+
+See the [SAP Fiori Design Guidelines](https://experience.sap.com/fiori-design-web/globalization-and-localization/) for more information.
+
+Landmarks are one of the ARIA attributes that provide significant immediate benefits to screen reader users
+in that they identify the structure of a web page. \
+By doing this, they enable a quick overview of a page, and make navigation much more effective
+
+There are eight of these roles, each representing a block of content that occurs commonly on web pages:
+* Banner, Complementary, Content Info, Form, Main, Navigation, Region, and Search.
+
+> **Note**: \
+Avoid using the landmark role as part of the label. For example, a navigation landmark with a label “Site
+Navigation” will be announced by a screen reader as “Site Navigation Navigation". The label should simply
+be “Site”.
