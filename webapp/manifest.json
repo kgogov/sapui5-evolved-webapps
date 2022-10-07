@@ -62,26 +62,42 @@
         "viewType": "XML",
         "async": true,
         "viewPath": "opensap.movies.view",
-        "controlAggregation": "pages",
         "controlId": "app",
-        "clearControlAggregation": false
+        "controlAggregation": "pages",
+        "clearControlAggregation": false,
+        "bypassed": {
+          "target": "notFound"
+        }
       },
       "routes": [
         {
-          "name": "RouteApp",
-          "pattern": "RouteApp",
+          "name": "Home",
+          "pattern": "",
           "target": [
-            "TargetApp"
+            "Home"
+          ]
+        },
+        {
+          "name": "MovieDetails",
+          "pattern": "movies/{movieId}/appointments/{appointmentId}",
+          "greedy": false,
+          "target": [
+            "MovieDetails"
           ]
         }
       ],
       "targets": {
-        "TargetApp": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "App",
-          "viewName": "App"
+        "Home": {
+          "viewId": "home",
+          "viewName": "Home"
+        },
+        "MovieDetails": {
+          "viewId": "movieDetails",
+          "viewName": "MovieDetails"
+        },
+        "NotFound": {
+          "viewId": "notFound",
+          "viewName": "NotFound"
         }
       }
     }

@@ -65,7 +65,7 @@ The model-view-controller pattern (MVC) applied in UI5, is reflected in the **we
 * The **model** folder contains additional logic related to data models. \
   Models are used for data management and control filtering, sorting and formatting of data.
 * The **view** folder contains views and fragments which define the UI of your app.
-* THe **controller** folder contains controllers and helper classes with logic to define the behavior of your views
+* The **controller** folder contains controllers and helper classes with logic to define the behavior of your views
 
 ```
 webapp
@@ -133,3 +133,20 @@ Related material
 * [Data Binding](https://openui5nightly.hana.ondemand.com/#/topic/e5310932a71f42daa41f3a6143efca9c)
 * [Expression Binding](https://openui5nightly.hana.ondemand.com/#/topic/daf6852a04b44d118963968a1239d2c0)
 * [Planning Calendar](https://openui5nightly.hana.ondemand.com/#/entity/sap.m.PlanningCalendar)
+
+### Week 2 Unit 4
+
+**What are targets?** \
+Targets are typically referenced in a route and define which view should be displayed when a route was hit. \
+In the routing configuration, you can even add multiple targets for the same route. \
+All the views configured in the respective targets will be instantiated automatically.
+
+**What is a route?** \
+A route is a configuration using a target and a pattern and is a single route to a certain app view in a project. \
+The routing configuration is responsible for loading and displaying the XML views of your app. \
+You simply connect the views by triggering navigation events and let the route do the work.
+
+It is good practice to create an empty app view and let the routing load and place all views inside the app. \
+This way, the views are only loaded when the corresponding route has been hit. \
+
+![Router](others/images/w2u4-Router.png)
